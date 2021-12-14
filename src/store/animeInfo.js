@@ -1,0 +1,26 @@
+export default {
+    data() {
+        return {
+            animeInfo: {
+                title: '',
+                abbr: '',
+            },
+
+            episode: {
+                number: 0,
+                title: '',
+                description: '',
+            },
+
+            character: {
+                name: '',
+                basicInfo: [
+                    {id: 0, age: 0},
+                    {id: 1, height: ''},
+                    {id: 2, weight: ''},
+                    {id: 0, affiliation: ''}
+                ]
+            },
+        }
+    }
+}
