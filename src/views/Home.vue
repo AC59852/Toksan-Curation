@@ -1,11 +1,13 @@
 <template>
   <Intro />
-  <AnimeChoice />
+  <About />
+  <Example />
 </template>
 
 <script>
 import Intro from '@/components/Intro.vue';
-import AnimeChoice from '@/components/AnimeChoice.vue';
+import About from '@/components/About.vue';
+import Example from '@/components/Example.vue';
   export default {
 
     mounted() {
@@ -18,7 +20,8 @@ import AnimeChoice from '@/components/AnimeChoice.vue';
     
     components: {
       Intro,
-      AnimeChoice
+      About,
+      Example
     }
   }
 </script>
