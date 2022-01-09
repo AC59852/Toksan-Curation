@@ -1,0 +1,44 @@
+$standard-br: 25px;
+$header-font: 'Readex Pro', sans-serif;
+$para-font: 'Arimo', sans-serif;
+
+@mixin btn {
+    font-family: 'Arima', sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: solid 3px black;
+    padding-bottom: 5px;
+}
+
+@mixin selector {
+    color: white;
+    width: 30%;
+    max-width: 560px;
+    background: #222;
+    border-radius: $standard-br;
+    margin: 2% 2% 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $para-font;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 500;
+    background-size: cover !important;
+    background-position: center !important;
+
+    img {
+        width: 80%;
+        margin: 0 auto;
+        height: 65%;
+        max-height: 190px;
+        object-fit: contain;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        padding-bottom: 65%;
+    }
+}

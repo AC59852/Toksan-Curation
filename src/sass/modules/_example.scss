@@ -1,0 +1,45 @@
+.example {
+    margin-bottom: 50px;
+    &__imgWrapper {
+        position: relative;
+        width: 80%;
+        border-radius: $standard-br;
+        border: none;
+        overflow: hidden;
+        margin: 0 auto;
+
+        &::after {
+            content: "";
+            display: block;
+            padding-bottom: 45%;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #C4C4C4;
+        border-radius: $standard-br;
+        border: none;
+    }
+
+    &__text {
+        width: 60%;
+        margin: 25px auto;
+        font-family: 'Arimo', sans-serif;
+        font-size: 1.05em;
+        line-height: 140%;
+        color: white;
+    }
+
+    &__btn {
+        @include btn;
+        color: white;
+        font-size: 1.4em;
+        border-bottom-color: white;
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+    }
+}
