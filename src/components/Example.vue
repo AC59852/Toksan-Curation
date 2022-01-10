@@ -1,9 +1,11 @@
 <template>
   <section id="example" class="example">
       <div class="example__wrapper">
-          <img src="/" alt="" class="example__img">
+          <div class="example__imgWrapper">
+            <img src="/" alt="" class="example__img">
+          </div>
           <p class="example__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ab corporis quod nostrum non nobis officia odit aliquid perspiciatis explicabo numquam est deserunt, dolorum maiores ex doloremque. Amet, animi dolorem!</p>
-          <router-link to="/" class="example__btn"></router-link>
+          <router-link to="/create" class="example__btn">Get Creative</router-link>
       </div>
   </section>
 </template>

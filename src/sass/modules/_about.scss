@@ -1,0 +1,39 @@
+.about {
+    margin: 55px 0;
+    &__wrapper {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        width: 325px;
+        height: 240px;
+        background: #262626;
+        margin: 25px;
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: 'Readex Pro', sans-serif;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin: 20px 0 10px;
+    }
+
+    &__text {
+        width: 85%;
+        margin: 0 auto;
+        font-size: 0.95em;
+        font-family: 'Arimo', sans-serif;
+        line-height: 140%;
+    }
+}

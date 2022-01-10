@@ -1,10 +1,12 @@
 <template>
   <section id="intro">
       <div class="hero">
-        <img class="hero__bck" src="/" alt="">
-        <div class="hero__text">
-          <h1>Toksan Curation</h1>
-          <router-link to="/">Get Started</router-link>
+        <div class="hero__wrapper">
+          <img class="hero__bck" src="/" alt="">
+          <div class="hero__text">
+            <h1>Toksan Curation</h1>
+            <router-link to="/create">Get Creative</router-link>
+          </div>
         </div>
       </div>
   </section>

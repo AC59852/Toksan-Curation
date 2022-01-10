@@ -14,12 +14,11 @@ export default {
 
             character: {
                 name: '',
-                basicInfo: [
-                    {id: 0, age: 0},
-                    {id: 1, height: ''},
-                    {id: 2, weight: ''},
-                    {id: 0, affiliation: ''}
-                ]
+                Timeline: [],
+                Relationships: [],
+                'Key Moments': [],
+                Skills: [],
+                More: [], 
             },
         }
     }

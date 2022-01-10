@@ -1,0 +1,70 @@
+.anime {
+    &__selectionWrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        width: 70%;
+        justify-content: center;
+    }
+
+    &__selection {
+        @include selector;
+        cursor: pointer;
+        transition: background-size 0.4s ease;
+
+        &--character {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/imgs/characters.jpg');
+            background-size: 190% !important;
+
+            &:hover {
+                background-size: 210% !important;
+            }
+        }
+
+        &--episode {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/imgs/episodes.jpg');
+            background-size: 150% !important;
+
+            &:hover {
+                background-size: 170% !important;
+            }
+        }
+    }
+
+    &__selected {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+
+        &Wrapper {
+            display: flex;
+            flex-wrap: wrap;
+
+            &:hover {
+                .anime__card {
+                    opacity: 0.6
+                }
+            }
+        }
+    }
+
+    &__card {
+        @include selector;
+        transition: opacity 0.4s ease;
+
+        &:hover {
+            opacity: 1 !important;
+        }
+    }
+
+    &__title {
+        font-family: $header-font;
+        font-size: 36px;
+        letter-spacing: 0.02em;
+        color: white;
+    }
+}
